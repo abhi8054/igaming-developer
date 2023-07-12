@@ -1,13 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Poppins', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper{
+  width: 80%;
+  /* height: 80vh; */
+  background-color: #000;
+  border-radius: 10px;
+  display: flex;
+  padding: 2rem 0;
+}
+
+.left,.right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1 1;
+}
+
+.left h1{
+  color: #fff;
+  font-size: 2.5rem;
+  font-style: italic;
+}
+
+.left > div:nth-child(1){
+  flex: 1 1;
+  display: flex;
+  align-items: center;
+}
+.left > div:nth-child(2),.whatsapp{
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+.left > div:nth-child(2) a,.whatsapp a{
+  margin: 10px;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  cursor: pointer;
+  background-color: #00b46a;
+  padding: 10px 5rem;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+}
+
+.left > div:nth-child(2) > i,.whatsapp i{
+  padding-left: 1rem;
+  color: #fff;
+}
+
+.right{
+  padding-top: 3rem;
+  justify-content: flex-start;
+}
+
+.right_wrapper{
+  display: flex;
+  flex-direction: column;
+  gap:1rem
+}
+
+.right_wrapper h1{
+  text-align: center;
+  color: #fff;
+}
+
+.input_fields{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.desc p{
+  text-align: center;
+  color: #fff;
+}
+
+.inputs{
+  width: 100%;
+}
+
+.inputs input{
+  width: 100%;
+  outline: none;
+  padding: 12px;
+  border-radius: 5px;
+}
+
+textarea{
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+  resize: none;
+  height: 80px;
+  padding: 5px 13px;
+}
+
+
+.btn button{
+  color: #fff;
+  width: 100%;
+  padding: 11px;
+  border: none;
+  border: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  background-color: #00b46a;
+  cursor:pointer;
+  font-weight: bold;
+}
+
+
+@media (max-width:1100px){
+
+  .wrapper{
+    flex-direction: column;
+    height:auto;
+    margin: 3rem 0;
+  }
+
+  .whatsapp{
+    justify-content: center;
+  }
+
+  .left h1{
+    text-align: center;
+  }
+}
+
+@media (max-width:570px){
+  .left h1{
+   font-size: 1.6rem;
+  }
+  .wrapper{
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    padding: 0 2rem;
+  }
+
+  .left > div:nth-child(2) a{
+    padding: 10px 3rem;
+  }
 }
