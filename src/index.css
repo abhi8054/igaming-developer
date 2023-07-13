@@ -17,15 +17,37 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: url("/public/img/bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .wrapper{
   width: 80%;
   /* height: 80vh; */
-  background-color: #000;
+  background-color: #0000008f;
   border-radius: 10px;
   display: flex;
   padding: 2rem 0;
+}
+
+.tech_stack{
+  padding-top: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.tech_stack ul{
+  padding-left: 2rem;
+}
+
+.tech_stack ul li{
+  color: #fff;
+  padding: 0.5px;
+  font-weight: 500;
+  letter-spacing: 1.2px;
 }
 
 .left,.right{
@@ -37,6 +59,8 @@ body {
 }
 
 .left h1{
+  text-shadow: 2px 2px 8px #fff;
+  text-align: center;
   color: #fff;
   font-size: 2.5rem;
   font-style: italic;
@@ -45,13 +69,21 @@ body {
 .left > div:nth-child(1){
   flex: 1 1;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  gap: 1rem;
 }
 .left > div:nth-child(2),.whatsapp{
   padding: 1rem;
   display: flex;
   align-items: center;
 }
+
+.whatsapp_msg p{
+  color: #fff;
+  font-weight: 700;
+}
+
 .left > div:nth-child(2) a,.whatsapp a{
   margin: 10px;
   text-decoration: none;
@@ -72,7 +104,6 @@ body {
 }
 
 .right{
-  padding-top: 3rem;
   justify-content: flex-start;
 }
 
@@ -96,6 +127,8 @@ body {
 .desc p{
   text-align: center;
   color: #fff;
+  font-weight: 700;
+
 }
 
 .inputs{
@@ -124,7 +157,7 @@ textarea{
   width: 100%;
   padding: 11px;
   border: none;
-  border: 5px;
+  border-radius: 5px;
   text-transform: uppercase;
   letter-spacing: 1.1px;
   background-color: #00b46a;
