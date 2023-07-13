@@ -25,7 +25,10 @@ function App() {
   const submitHandler = (e) =>{
       e.preventDefault()
       setLoading(true)
-      addDoc(collectionRef,data).then(res =>{
+      addDoc(collectionRef,{
+        ...data,
+        createdAt:new Date()
+      }).then(res =>{
         console.log(res);
         setData({
           name:'',
