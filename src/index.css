@@ -98,7 +98,7 @@ body {
   border-radius: 5px;
 }
 
-.left > div:nth-child(2) > i,.whatsapp i{
+.left > div:nth-child(2) > i{
   padding-left: 1rem;
   color: #fff;
 }
@@ -197,6 +197,6 @@ textarea{
   }
 
   .left > div:nth-child(2) a{
-    padding: 10px 3rem;
+    padding: 10px 2.8rem;
   }
 }
