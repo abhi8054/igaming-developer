@@ -71,7 +71,7 @@ function App() {
               <h1>Hire Remote <br></br>Igaming Developer</h1>
             </div>
             <div>
-              <a href="https://api.whatsapp.com/send/?phone=+441892710894&text&type=phone_number&app_absent=0"><i class="fa-brands fa-whatsapp"></i> whatsapp</a>
+              <a href="https://api.whatsapp.com/send/?phone=441892710894&text&type=phone_number&app_absent=0"><i class="fa-brands fa-whatsapp"></i> whatsapp</a>
               <i className="fa-solid fa-bell"></i>
             </div>
           </div>
